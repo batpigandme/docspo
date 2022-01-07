@@ -85,6 +85,27 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
+</style>
 
   <!--radix_placeholder_meta_tags-->
   <title>Docspo</title>
@@ -112,6 +133,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--/radix_placeholder_meta_tags-->
   
+  <meta name="citation_reference" content="citation_title=Speaking JavaScript;citation_publication_date=2014;citation_publisher=O’Reilly Media;citation_author=Axel Rauschmayer"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
@@ -1490,11 +1512,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h3>Contents</h3>
 <ul>
 <li><a href="#what-is-this">What is this?</a></li>
+<li><a href="#javascript">JavaScript</a>
+<ul>
+<li><a href="#speaking-javascript">Speaking JavaScript</a></li>
+</ul></li>
 </ul>
 </nav>
 </div>
-<h1 id="what-is-this">What is this?</h1>
-<p>A few years back I chanced upon <a href="https://dataandme.tumblr.com/tagged/studyspo"><strong>studyspo</strong></a> tumblr, a place where the drudgery of note-taking is celebrated as an art form (or, at least, that’s my interpretation). Here, I hope to collect similar findings in the realm of documentation for programming languages and frameworks.</p>
 <div class="terms">
 <dl>
 <dt>
@@ -1505,8 +1529,52 @@ A portmanteau of documentation + inspiration.
 </dd>
 </dl>
 </div>
+<h1 id="what-is-this">What is this?</h1>
+<p>A few years back I chanced upon <a href="https://dataandme.tumblr.com/tagged/studyspo"><strong>studyspo</strong></a> tumblr, a place where the drudgery of note-taking is celebrated as an art form (or at least that’s <em>my</em> interpretation). Here, I hope to collect similar findings in the realm of documentation for programming languages and frameworks.</p>
 <p>I’m not yet sure who the target audience is for this (aside from yours truly), or if this document will hold any meaning unto itself. But, for now, I quite literally need a place to keep my notes.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<aside>
+By “notes” I mean links and impressions, not content.
+</aside>
+<h1 id="javascript">JavaScript</h1>
+<div class="status">
+<p><strong>My status:</strong> I don’t know JavaScript, but we travel in some of the same circles. Like, we have enough mutual friends that I could easily get by with a combination of copy and paste and asking for help, but I’ve never <em>tried</em> to learn it head on. We interact mainly through R packages that wrap JavaScript APIs, which occasionally leads to my looking under the hood to tweak a few things directly.</p>
+</div>
+<h2 id="speaking-javascript">Speaking JavaScript</h2>
+<p><a href="http://speakingjs.com/"><em>Speaking JavaScript</em></a> <span class="citation" data-cites="speakingjs">(<a href="#ref-speakingjs" role="doc-biblioref">Rauschmayer 2014</a>)</span> wasn’t the first thing I found when looking for some sort of crash-course intro to JS for someone (me) who already knows how to program but is looking to become a bit more JavaScript literate, but I wish it had been. Its author, <a href="http://dr-axel.de/">Axel Rauschmayer</a>, has several free, online <a href="https://exploringjs.com/">JavaScript books</a>, all of which he describes in one or two bullets that, along with their titles, give you a sense of who the targeted reader is.</p>
+<p>I’m lifting this whole example that comprises <strong>An Overview of the Syntax</strong> from the <a href="http://speakingjs.com/es5/ch01.html">first chapter</a> because I think it’s <em>masterful</em>:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Two slashes start single-line comments</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> x<span class="op">;</span>  <span class="co">// declaring a variable</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">3</span> <span class="op">+</span> y<span class="op">;</span>  <span class="co">// assigning a value to the variable `x`</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">foo</span>(x<span class="op">,</span> y)<span class="op">;</span>  <span class="co">// calling function `foo` with parameters `x` and `y`</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>obj<span class="op">.</span><span class="fu">bar</span>(<span class="dv">3</span>)<span class="op">;</span>  <span class="co">// calling method `bar` of object `obj`</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">// A conditional statement</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (x <span class="op">===</span> <span class="dv">0</span>) {  <span class="co">// Is `x` equal to zero?</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">123</span><span class="op">;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">// Defining function `baz` with parameters `a` and `b`</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">baz</span>(a<span class="op">,</span> b) {</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b<span class="op">;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</div>
+<p>Why am I so obsessed with it? It’s <em>beyond</em> parsimonious. In that code block alone, you’re introduced to what would elsewhere be several chapters worth of content.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> How to write a comment is always one of the first things I want to know when encountering new syntax, <em>plus</em> it lets you read the commented code that follows. You also pick up several pieces of vocabulary, the meanings of which can be inferred from the context and that the author can continue to use without needing to explicitly define them: variable, value, function, object, parameter, method, etc. This is super valuable for getting started, especially since defining these terms can be onerous and abstract. I don’t need to know what exactly a method is or how it does what it does, but being able to know that <code>obj.bar(3);</code> means a method is being called on an object opens up quite a bit in terms of reading code.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-speakingjs" class="csl-entry" role="doc-biblioentry">
+Rauschmayer, Axel. 2014. <em>Speaking <span>JavaScript</span></em>. Sebastopol, CA: O’Reilly Media. <a href="http://speakingjs.com">http://speakingjs.com</a>.
+</div>
+</div>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>That’s not a bad thing in those contexts, but this is something special.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

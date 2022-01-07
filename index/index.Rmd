@@ -20,10 +20,6 @@ twitter:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# What is this?
-
-A few years back I chanced upon [__studyspo__](https://dataandme.tumblr.com/tagged/studyspo) tumblr, a place where the drudgery of note-taking is celebrated as an art form (or, at least, that's my interpretation). Here, I hope to collect similar findings in the realm of documentation for programming languages and frameworks.
-
 ::: {.terms}
 <dl>
   <dt>*__docspo__*</dt>
@@ -31,7 +27,48 @@ A few years back I chanced upon [__studyspo__](https://dataandme.tumblr.com/tagg
 </dl>
 :::
 
+
+# What is this?
+
+A few years back I chanced upon [__studyspo__](https://dataandme.tumblr.com/tagged/studyspo) tumblr, a place where the drudgery of note-taking is celebrated as an art form (or at least that's _my_ interpretation). Here, I hope to collect similar findings in the realm of documentation for programming languages and frameworks.
+
 I'm not yet sure who the target audience is for this (aside from yours truly), or if this document will hold any meaning unto itself. But, for now, I quite literally need a place to keep my notes.
 
+<aside>By “notes” I mean links and impressions, not content.</aside>
 
+# JavaScript
+
+::: {.status}
+__My status:__ I don't know JavaScript, but we travel in some of the same circles. Like, we have enough mutual friends that I could easily get by with a combination of copy and paste and asking for help, but I've never _tried_ to learn it head on. We interact mainly through R packages that wrap JavaScript APIs, which occasionally leads to my looking under the hood to tweak a few things directly.
+:::
+
+## Speaking JavaScript
+
+[_Speaking JavaScript_](http://speakingjs.com/) [@speakingjs] wasn't the first thing I found when looking for some sort of crash-course intro to JS for someone (me) who already knows how to program but is looking to become a bit more JavaScript literate, but I wish it had been. Its author, [Axel Rauschmayer](http://dr-axel.de/), has several free, online [JavaScript books](https://exploringjs.com/), all of which he describes in one or two bullets that, along with their titles, give you a sense of who the targeted reader is.
+
+I'm lifting this whole example that comprises __An Overview of the Syntax__ from the [first chapter](http://speakingjs.com/es5/ch01.html) because I think it's _masterful_:
+
+```{js speaking-js-overview, eval = FALSE, echo = TRUE}
+// Two slashes start single-line comments
+
+var x;  // declaring a variable
+
+x = 3 + y;  // assigning a value to the variable `x`
+
+foo(x, y);  // calling function `foo` with parameters `x` and `y`
+obj.bar(3);  // calling method `bar` of object `obj`
+
+// A conditional statement
+if (x === 0) {  // Is `x` equal to zero?
+    x = 123;
+}
+
+// Defining function `baz` with parameters `a` and `b`
+function baz(a, b) {
+    return a + b;
+}
+
+```
+
+Why am I so obsessed with it? It's _beyond_ parsimonious. In that code block alone, you're introduced to what would elsewhere be several chapters worth of content.^[That's not a bad thing in those contexts, but this is something special.] How to write a comment is always one of the first things I want to know when encountering new syntax, _plus_ it lets you read the commented code that follows. You also pick up several pieces of vocabulary, the meanings of which can be inferred from the context and that the author can continue to use without needing to explicitly define them: variable, value, function, object, parameter, method, etc. This is super valuable for getting started, especially since defining these terms can be onerous and abstract. I don't need to know what exactly a method is or how it does what it does, but being able to know that `obj.bar(3);` means a method is being called on an object opens up quite a bit in terms of reading code.  
 
