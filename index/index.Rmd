@@ -1,0 +1,37 @@
+---
+title: "Docspo"
+description: |
+  Notes on documentation that inspires me&mdash;whether I know the language(s) or not.
+author:
+  - name: Mara Averick
+date: "`r format(Sys.time(), '%B, %Y')`"
+output: 
+  distill::distill_article:
+    self_contained: false
+    toc: true
+reposityory_url: https://github.com/batpigandme/docspo
+bibliography: biblio.bib
+creative_commons: CC BY
+twitter:
+  creator: "@dataandme"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# What is this?
+
+A few years back I chanced upon [__studyspo__](https://dataandme.tumblr.com/tagged/studyspo) tumblr, a place where the drudgery of note-taking is celebrated as an art form (or, at least, that's my interpretation). Here, I hope to collect similar findings in the realm of documentation for programming languages and frameworks.
+
+::: {.terms}
+<dl>
+  <dt>*__docspo__*</dt>
+  <dd>A portmanteau of documentation &plus; inspiration.</dd>
+</dl>
+:::
+
+I'm not yet sure who the target audience is for this (aside from yours truly), or if this document will hold any meaning unto itself. But, for now, I quite literally need a place to keep my notes.
+
+
+
