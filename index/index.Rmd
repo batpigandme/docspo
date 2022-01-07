@@ -4,7 +4,7 @@ description: |
   Notes on documentation that inspires me&mdash;whether I know the language(s) or not.
 author:
   - name: Mara Averick
-date: "`r format(Sys.time(), '%B, %Y')`"
+date: "`r Sys.Date()`"
 output: 
   distill::distill_article:
     self_contained: false
@@ -46,7 +46,9 @@ __My status:__ I don't know JavaScript, but we travel in some of the same circle
 
 [_Speaking JavaScript_](http://speakingjs.com/) [@speakingjs] wasn't the first thing I found when looking for some sort of crash-course intro to JS for someone (me) who already knows how to program but is looking to become a bit more JavaScript literate, but I wish it had been. Its author, [Axel Rauschmayer](http://dr-axel.de/), has several free, online [JavaScript books](https://exploringjs.com/), all of which he describes in one or two bullets that, along with their titles, give you a sense of who the targeted reader is.
 
-I'm lifting this whole example that comprises __An Overview of the Syntax__ from the [first chapter](http://speakingjs.com/es5/ch01.html) because I think it's _masterful_:
+#### Overview in commented code
+
+I'm lifting this whole example that comprises [__An Overview of the Syntax__](http://speakingjs.com/es5/ch01.html#_an_overview_of_the_syntax) from the [first chapter](http://speakingjs.com/es5/ch01.html) because I think it's _masterful_:
 
 ```{js speaking-js-overview, eval = FALSE, echo = TRUE}
 // Two slashes start single-line comments
@@ -70,5 +72,18 @@ function baz(a, b) {
 
 ```
 
-Why am I so obsessed with it? It's _beyond_ parsimonious. In that code block alone, you're introduced to what would elsewhere be several chapters worth of content.^[That's not a bad thing in those contexts, but this is something special.] How to write a comment is always one of the first things I want to know when encountering new syntax, _plus_ it lets you read the commented code that follows. You also pick up several pieces of vocabulary, the meanings of which can be inferred from the context and that the author can continue to use without needing to explicitly define them: variable, value, function, object, parameter, method, etc. This is super valuable for getting started, especially since defining these terms can be onerous and abstract. I don't need to know what exactly a method is or how it does what it does, but being able to know that `obj.bar(3);` means a method is being called on an object opens up quite a bit in terms of reading code.  
+Why am I so obsessed with it? It's _beyond_ parsimonious. In that code block alone, you're introduced to what would elsewhere be several chapters worth of content.^[That's not a bad thing in those contexts, but this is something special.] How to write a comment is always one of the first things I want to know when encountering new syntax, _plus_ it lets you read the commented code that follows. 
 
+You also pick up several pieces of vocabulary, the meanings of which can be inferred from the context and that the author can continue to use without needing to explicitly define them: variable, value, function, object, parameter, method, etc. This is super valuable for getting started, especially since defining these terms can be onerous and abstract. I don't need to know what exactly a method is or how it does what it does, but being able to know that `obj.bar(3);` means a method is being called on an object opens up quite a bit in terms of reading code.  The chapter _does_ go on to define each of these terms, but having that overview means that the definitions can reference other terms without worrying too much about order/sequence.
+
+#### Setting the vibe
+
+I admittedly didn't read the whole preface, but there are pieces of it I think are really well done. [“What You Need to Know About This Book”](http://speakingjs.com/es5/pr02.html#_what_you_need_to_know_about_this_book) gives you the persona/target audience (programmers who know some other language), and what's _not_ covered. And then there's this liberating first sentence to [“Tips for Reading this Book”](http://speakingjs.com/es5/pr02.html#how_to_read):
+
+> The most important tip for learning JavaScript is _don’t get bogged down by the details_.
+
+I honestly think that's one of the hardest things for programmers to do when writing: ignore the edge cases (AKA get bogged down by the details). It's like we write in preemptive defense of someone coming in and pointing out the exceptions. Guess what? They're not who you're writing this for, Susan!
+
+#### My take
+
+I haven't read the whole thing yet (which should be obvious, given my current relationship with JavaScript), and I'll likely add more comments here as I go. That said, I got more out of reading that one chapter (the first) than I did out of reading more in-depth reference pages on similar topics&mdash;I'm glad they all exist, but Speaking JS is fresh (and very for me). 
