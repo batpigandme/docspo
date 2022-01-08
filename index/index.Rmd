@@ -13,7 +13,7 @@ reposityory_url: https://github.com/batpigandme/docspo
 bibliography: biblio.bib
 creative_commons: CC BY
 twitter:
-  creator: "@dataandme"
+  creator: "&commat;dataandme"
 ---
 
 ```{r setup, include=FALSE}
@@ -87,3 +87,24 @@ I honestly think that's one of the hardest things for programmers to do when wri
 #### My take
 
 I haven't read the whole thing yet (which should be obvious, given my current relationship with JavaScript), and I'll likely add more comments here as I go. That said, I got more out of reading that one chapter (the first) than I did out of reading more in-depth reference pages on similar topics&mdash;I'm glad they all exist, but Speaking JS is fresh (and very for me). 
+
+## React
+
+### Getting Started
+
+#### The structure is everything
+
+There may not have list agreement, but the options at the top of [React's “Getting Started”](https://reactjs.org/docs/getting-started.html) really are pretty darn good: [try React](https://reactjs.org/docs/getting-started.html#try-react), [learn React](https://reactjs.org/docs/getting-started.html#learn-react), [staying informed](https://reactjs.org/docs/getting-started.html#staying-informed), [versioned documentation](https://reactjs.org/docs/getting-started.html#versioned-documentation), [something missing](https://reactjs.org/docs/getting-started.html#something-missing). 
+
+```{r react-gettingstarted, fig.alt="Screenshot of https://reactjs.org/docs/getting-started.html showing the aforementioned list of options", fig.cap="Screenshot of Getting Started page for React"}
+knitr::include_graphics(here::here("index", "imgs", "reactjs_getting_started.png"))
+```
+
+Maybe I'd kill off “something missing” (from that header menu, not get rid of it on the whole), but it's concise and gives the primary things someone would be looking for in getting-started-style documentation. 
+
+In [Learn React](https://reactjs.org/docs/getting-started.html#learn-react) they expressly break things down again:
+
+> * If you prefer to __learn by doing__, start with our [practical tutorial](https://reactjs.org/tutorial/tutorial.html).  
+> * If you prefer to __learn concepts step by step__, start with our [guide to main concepts](https://reactjs.org/docs/hello-world.html).
+
+You also have the sidebar navigation showing you the other sections, some of which might be what someone was actually looking for when they went to the getting-started page (e.g. [add React to a website](https://reactjs.org/docs/add-react-to-a-website.html), [create a new React app](https://reactjs.org/docs/create-a-new-react-app.html)). I also like the wording of “Main Concepts” (and how prominent it is in the menu)&mdash;most people aren't trying to learn all the things, and it lets you know that this subset probably holds the key concepts you need to get going.
