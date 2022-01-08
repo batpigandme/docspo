@@ -9,6 +9,7 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
+    toc_depth: 2
 reposityory_url: https://github.com/batpigandme/docspo
 bibliography: biblio.bib
 creative_commons: CC BY
@@ -88,13 +89,13 @@ I honestly think that's one of the hardest things for programmers to do when wri
 
 I haven't read the whole thing yet (which should be obvious, given my current relationship with JavaScript), and I'll likely add more comments here as I go. That said, I got more out of reading that one chapter (the first) than I did out of reading more in-depth reference pages on similar topics&mdash;I'm glad they all exist, but Speaking JS is fresh (and very for me). 
 
-## React
+## ReactJS
 
 ### Getting Started
 
 #### The structure is everything
 
-There may not have list agreement, but the options at the top of [React's “Getting Started”](https://reactjs.org/docs/getting-started.html) really are pretty darn good: [try React](https://reactjs.org/docs/getting-started.html#try-react), [learn React](https://reactjs.org/docs/getting-started.html#learn-react), [staying informed](https://reactjs.org/docs/getting-started.html#staying-informed), [versioned documentation](https://reactjs.org/docs/getting-started.html#versioned-documentation), [something missing](https://reactjs.org/docs/getting-started.html#something-missing). 
+There may not have list agreement, but the options at the top of [React's “Getting Started”](https://reactjs.org/docs/getting-started.html) [@reactjs] really are pretty darn good: [try React](https://reactjs.org/docs/getting-started.html#try-react), [learn React](https://reactjs.org/docs/getting-started.html#learn-react), [staying informed](https://reactjs.org/docs/getting-started.html#staying-informed), [versioned documentation](https://reactjs.org/docs/getting-started.html#versioned-documentation), [something missing](https://reactjs.org/docs/getting-started.html#something-missing). 
 
 ```{r react-gettingstarted, fig.alt="Screenshot of https://reactjs.org/docs/getting-started.html showing the aforementioned list of options", fig.cap="Screenshot of Getting Started page for React"}
 knitr::include_graphics(here::here("index", "imgs", "reactjs_getting_started.png"))
