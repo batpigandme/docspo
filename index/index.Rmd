@@ -109,3 +109,7 @@ In [Learn React](https://reactjs.org/docs/getting-started.html#learn-react) they
 > * If you prefer to __learn concepts step by step__, start with our [guide to main concepts](https://reactjs.org/docs/hello-world.html).
 
 You also have the sidebar navigation showing you the other sections, some of which might be what someone was actually looking for when they went to the getting-started page (e.g. [add React to a website](https://reactjs.org/docs/add-react-to-a-website.html), [create a new React app](https://reactjs.org/docs/create-a-new-react-app.html)). I also like the wording of “Main Concepts” (and how prominent it is in the menu)&mdash;most people aren't trying to learn all the things, and it lets you know that this subset probably holds the key concepts you need to get going.
+
+# Assorted
+
+* [*__The documentation system__*](https://documentation.divio.com/) (AKA _The Grand Unified Theory of Documentation_) by Divio, which breaks documentation into a system of four elements: tutorials, how-to guides, technical reference, and explanation.
