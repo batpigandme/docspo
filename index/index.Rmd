@@ -113,7 +113,7 @@ You also have the sidebar navigation showing you the other sections, some of whi
 # Sass
 
 ::: {.status}
-__My status:__ I've been learning Sass over the past few months as I familiarize myself with [Quarto](https://quarto.org/), and Bootstrap theming.^[See, e.g. [@averick2022down].] While I'm by no means an expert, I have a decent sense of how it works at this point.
+__My status:__ I've been learning Sass over the past few months as I familiarize myself with [Quarto](https://quarto.org/), and Bootstrap theming^[See [Down the front-end rabbit hole](https://dataand.me/notes/2021-12-26-down-the-front-end-rabbit-hole).]. While I'm by no means an expert, I have a decent sense of how it works at this point.
 :::
 
 ## Sass blog
@@ -143,4 +143,4 @@ The Sass blog is sufficiently sparse (about four posts a year) that it seems fol
 
 # Assorted
 
-* [*__The documentation system__*](https://documentation.divio.com/) (AKA _The Grand Unified Theory of Documentation_) by Divio, which breaks documentation into a system of four elements: tutorials, how-to guides, technical reference, and explanation.
+* [__The documentation system__](https://documentation.divio.com/) (AKA _The Grand Unified Theory of Documentation_) by Divio, which breaks documentation into a system of four elements: tutorials, how-to guides, technical reference, and explanation.
