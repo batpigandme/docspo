@@ -110,6 +110,37 @@ In [Learn React](https://reactjs.org/docs/getting-started.html#learn-react) they
 
 You also have the sidebar navigation showing you the other sections, some of which might be what someone was actually looking for when they went to the getting-started page (e.g. [add React to a website](https://reactjs.org/docs/add-react-to-a-website.html), [create a new React app](https://reactjs.org/docs/create-a-new-react-app.html)). I also like the wording of “Main Concepts” (and how prominent it is in the menu)&mdash;most people aren't trying to learn all the things, and it lets you know that this subset probably holds the key concepts you need to get going.
 
+# Sass
+
+::: {.status}
+__My status:__ I've been learning Sass over the past few months as I familiarize myself with [Quarto](https://quarto.org/), and Bootstrap theming.^[See, e.g. [@averick2022down].] While I'm by no means an expert, I have a decent sense of how it works at this point.
+:::
+
+## Sass blog
+
+I think that, on the whole, the official [Sass-language documentation](https://sass-lang.com/documentation) [@sassdocs2021] is quite good. 
+The [Sass blog](https://sass-lang.com/blog) has a structure I like in terms of clear categories/types of posts that are consistent, with obvious target audiences, and calls to action.
+
+Posts titled __“Request for Comment”__, e.g. [Request for Comments: New JS API](https://sass-lang.com/blog/request-for-comments-new-js-api) [@weizenbaum2021a], summarize the key aspects of feature proposals, linking to their full discussions on GitHub. 
+It's a nice way of both soliciting feedback for those who don't necessarily want to go through what might be difficult-to-follow threads on GitHub, and creating something to refer back to if/when these proposals are implemented.
+
+Posts announcing live implementations of __release candidates__, e.g. [New JS API Release Candidate is Live](https://sass-lang.com/blog/new-js-api-release-candidate) [@weizenbaum2021b], “give users a chance to kick the tires a bit before we set [a feature] in stone.”
+There are clear instructions about how to use the release candidate (including installation instructions, when necessary), and a concluding section on what to expect if/when deprecation time comes around.
+
+A __“Feature Watch”__ post, e.g. [Feature Watch: CSS Imports and CSS Compatibility](https://sass-lang.com/blog/feature-watchcss-imports-and-css-compatibility) [@weizenbaum2018], goes into details about a feature that has gone through the their process of: proposal, tests, and implementation. They're fairly similar to our package-release posts on the tidyverse blog.
+
+Posts __announcing deprecation__, e.g. [LibSass is Deprecated](https://sass-lang.com/blog/libsass-is-deprecated) [@weizenbaum2020], start off with the key points (which makes sense). After that, the key sections are as follows:  
+
+  * Why deprecate?  
+  * What does “deprecated” mean?    
+  * How do I migrate?  
+
+Other sections are context dependent, but I particularly like that they take the time to reiterate the meaning of the lifecycle stage (i.e. deprecation).
+
+#### My take
+
+The Sass blog is sufficiently sparse (about four posts a year) that it seems followable for heavy language users. It also creates a succinct, structured trail for the developers to point to as users who haven't followed as closely encounter these things in the future.
+
 # Assorted
 
 * [*__The documentation system__*](https://documentation.divio.com/) (AKA _The Grand Unified Theory of Documentation_) by Divio, which breaks documentation into a system of four elements: tutorials, how-to guides, technical reference, and explanation.
