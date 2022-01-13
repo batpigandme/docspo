@@ -89,6 +89,26 @@ I honestly think that's one of the hardest things for programmers to do when wri
 
 I haven't read the whole thing yet (which should be obvious, given my current relationship with JavaScript), and I'll likely add more comments here as I go. That said, I got more out of reading that one chapter (the first) than I did out of reading more in-depth reference pages on similar topics&mdash;I'm glad they all exist, but Speaking JS is fresh (and very for me). 
 
+## JS4DS
+
+[JavaScript for Data Science](https://js4ds.org) (JS4DS) [@gans2020] was written by [Maya Gans](https://maya.rbind.io), [Toby Hodges](https://tbyhdgs.info), and [Greg Wilson](http://third-bit.com) who all, presumably, contributed equally. But it's worth noting Greg Wilson's background in, and writing on evidence-based practices in teaching programming&mdash;see, e.g. [Teaching Tech Together](https://teachtogether.tech/) [@wilson2020].
+
+#### Who you are (personas)
+
+Defining the audience through “prototypical users” (i.e. personas with names, experiences, goals, etc.) is a practice that Wilson uses across his works and is a decidedly effective method for gauging the book's fit for a reader without feeling like a check-list of credentials.
+
+I, for example, wouldn't necessarily give a resounding _Yes!_ to the bullets that follow the three learners in the [“Who You Are”](https://js4ds.org/#s:intro-personas) section of the introduction. But the personas make it clear that it's a good fit for my level of experience and needs.
+
+#### Setting up and tooling
+
+In the intro (see [Setting Up](https://js4ds.org/#s:intro-setup)) and throughout the book as necessary, you're given a somewhat detailed description of the tools you'll need to set up, how they differ, and how you'll be using them on your computer. It's not so detailed as to bog the reader down, and it's clearly delineated in such a way that you can easily skim the sections if you don't need the information. However, this is the type of information that I've found lacking in other programming books.
+
+#### Key points
+
+Each chapter concludes with a section titled “Key Points” (see, e.g. [Key Points for Basic Features](https://js4ds.org/#key-points-1)), which is a bulleted list of the concepts covered. I like this for two reasons: it serves as a summary/reminder for someone who's read the chapter, and it can serve as a sort of “test” of topics for someone deciding whether or not they actually need to read the chapter.
+
+<aside>Accommodating the piecemeal knowledge learners often bring to the table is a clutch move.</aside>
+
 ## ReactJS
 
 ### Getting Started
