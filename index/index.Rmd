@@ -118,7 +118,7 @@ Each chapter concludes with a section titled “Key Points” (see, e.g. [Key Po
 There may not have list agreement, but the options at the top of [React's “Getting Started”](https://reactjs.org/docs/getting-started.html) [@reactjs] really are pretty darn good: [try React](https://reactjs.org/docs/getting-started.html#try-react), [learn React](https://reactjs.org/docs/getting-started.html#learn-react), [staying informed](https://reactjs.org/docs/getting-started.html#staying-informed), [versioned documentation](https://reactjs.org/docs/getting-started.html#versioned-documentation), [something missing](https://reactjs.org/docs/getting-started.html#something-missing). 
 
 ```{r react-gettingstarted, fig.alt="Screenshot of https://reactjs.org/docs/getting-started.html showing the aforementioned list of options", fig.cap="Screenshot of Getting Started page for React"}
-knitr::include_graphics(here::here("index", "imgs", "reactjs_getting_started.png"))
+knitr::include_graphics(here::here("images", "reactjs_getting_started.png"))
 ```
 
 Maybe I'd kill off “something missing” (from that header menu, not get rid of it on the whole), but it's concise and gives the primary things someone would be looking for in getting-started-style documentation. 
